@@ -11,4 +11,14 @@
         <maven.compiler.target>22</maven.compiler.target>
         <exec.mainClass>HostelManagementSystem</exec.mainClass>
     </properties>
+    
+     <dependencies>
+        <!-- MySQL JDBC Driver -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>9.1.0</version>
+        </dependency>
+        
+     </dependencies>
 </project>
