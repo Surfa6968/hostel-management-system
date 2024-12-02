@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.System.Logger;
+import java.net.URL;
 import java.sql.Blob;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -54,9 +55,18 @@ public class HostelManagementSystem extends javax.swing.JFrame {
 
         scrollbar1 = new java.awt.Scrollbar();
         Header = new javax.swing.JPanel();
-        SystemName = new javax.swing.JLabel();
         Body = new javax.swing.JPanel();
         Tabs = new javax.swing.JTabbedPane();
+        Home = new java.awt.Panel();
+        jPanel6 = new javax.swing.JPanel();
+        SystemName7 = new javax.swing.JLabel();
+        SystemName8 = new javax.swing.JLabel();
+        SystemName6 = new javax.swing.JLabel();
+        SystemName5 = new javax.swing.JLabel();
+        SystemName2 = new javax.swing.JLabel();
+        SystemName9 = new javax.swing.JLabel();
+        SystemName10 = new javax.swing.JLabel();
+        SystemName11 = new javax.swing.JLabel();
         addStudent = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
@@ -187,6 +197,8 @@ public class HostelManagementSystem extends javax.swing.JFrame {
         edit_std_details = new javax.swing.JButton();
         del_std = new javax.swing.JButton();
         uploadNew = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
         listStudent = new javax.swing.JPanel();
         jScrollPane6 = new javax.swing.JScrollPane();
         jDesktopPane1 = new javax.swing.JDesktopPane();
@@ -200,25 +212,24 @@ public class HostelManagementSystem extends javax.swing.JFrame {
         roomMaxCount = new javax.swing.JTextField();
         NewroomNo = new javax.swing.JTextField();
         addRooms = new javax.swing.JButton();
-        leavedFromHostel = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        roomsInHostel = new javax.swing.JLabel();
+        Available_Rooms = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        SystemName1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Hostel Management System");
         setBackground(new java.awt.Color(255, 255, 255));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setLocationByPlatform(true);
-        setMaximumSize(new java.awt.Dimension(1920, 1080));
         setName("Hostel Management System"); // NOI18N
         setSize(new java.awt.Dimension(1920, 800));
 
         Header.setBackground(new java.awt.Color(51, 22, 142));
         Header.setForeground(new java.awt.Color(255, 255, 255));
-
-        SystemName.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 1, 48)); // NOI18N
-        SystemName.setForeground(new java.awt.Color(255, 255, 255));
-        SystemName.setText("Hostel Management System");
-        SystemName.setIconTextGap(5);
-        SystemName.setInheritsPopupMenu(false);
 
         Body.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -229,6 +240,126 @@ public class HostelManagementSystem extends javax.swing.JFrame {
         Tabs.setAutoscrolls(true);
         Tabs.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
 
+        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
+
+        SystemName7.setBackground(new java.awt.Color(0, 0, 0));
+        SystemName7.setFont(new java.awt.Font("Lucida Fax", 1, 48)); // NOI18N
+        SystemName7.setForeground(new java.awt.Color(0, 0, 102));
+        SystemName7.setText("Welcome TO Hostel Management System");
+        SystemName7.setIconTextGap(5);
+        SystemName7.setInheritsPopupMenu(false);
+
+        SystemName8.setBackground(new java.awt.Color(0, 0, 0));
+        SystemName8.setFont(new java.awt.Font("Javanese Text", 1, 36)); // NOI18N
+        SystemName8.setText("South Eastern University of Sri Lanka");
+        SystemName8.setIconTextGap(5);
+        SystemName8.setInheritsPopupMenu(false);
+
+        SystemName6.setBackground(new java.awt.Color(0, 0, 0));
+        SystemName6.setFont(new java.awt.Font("Monotype Corsiva", 1, 24)); // NOI18N
+        SystemName6.setText("Developers");
+        SystemName6.setIconTextGap(5);
+        SystemName6.setInheritsPopupMenu(false);
+
+        SystemName5.setBackground(new java.awt.Color(0, 0, 0));
+        SystemName5.setFont(new java.awt.Font("Monotype Corsiva", 1, 24)); // NOI18N
+        SystemName5.setText("SEU/IS/21/ICT/059");
+        SystemName5.setIconTextGap(5);
+        SystemName5.setInheritsPopupMenu(false);
+
+        SystemName2.setBackground(new java.awt.Color(0, 0, 0));
+        SystemName2.setFont(new java.awt.Font("Monotype Corsiva", 1, 24)); // NOI18N
+        SystemName2.setText("SEU/IS/21/ICT/075");
+        SystemName2.setIconTextGap(5);
+        SystemName2.setInheritsPopupMenu(false);
+
+        SystemName9.setBackground(new java.awt.Color(0, 0, 0));
+        SystemName9.setFont(new java.awt.Font("Rockybilly", 1, 24)); // NOI18N
+        SystemName9.setText("Faculty of Technology");
+        SystemName9.setIconTextGap(5);
+        SystemName9.setInheritsPopupMenu(false);
+
+        SystemName10.setBackground(new java.awt.Color(0, 0, 0));
+        SystemName10.setFont(new java.awt.Font("Monotype Corsiva", 1, 24)); // NOI18N
+        SystemName10.setText("Developed By Students of");
+        SystemName10.setIconTextGap(5);
+        SystemName10.setInheritsPopupMenu(false);
+
+        SystemName11.setBackground(new java.awt.Color(0, 0, 0));
+        SystemName11.setFont(new java.awt.Font("Javanese Text", 1, 36)); // NOI18N
+        SystemName11.setIconTextGap(5);
+        SystemName11.setInheritsPopupMenu(false);
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(57, 57, 57)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(SystemName8)
+                            .addComponent(SystemName7)
+                            .addComponent(SystemName6)
+                            .addComponent(SystemName11)))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(121, 121, 121)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(SystemName5, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SystemName2))))
+                .addContainerGap(418, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                        .addComponent(SystemName10)
+                        .addGap(575, 575, 575))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                        .addComponent(SystemName9)
+                        .addGap(352, 352, 352))))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(72, 72, 72)
+                .addComponent(SystemName7, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(SystemName8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(SystemName11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(SystemName6)
+                .addGap(18, 18, 18)
+                .addComponent(SystemName5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(SystemName2)
+                .addGap(112, 112, 112)
+                .addComponent(SystemName10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(SystemName9)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout HomeLayout = new javax.swing.GroupLayout(Home);
+        Home.setLayout(HomeLayout);
+        HomeLayout.setHorizontalGroup(
+            HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(HomeLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(3851, Short.MAX_VALUE))
+        );
+        HomeLayout.setVerticalGroup(
+            HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(HomeLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        Tabs.addTab("HOME", Home);
+
         addStudent.setBackground(new java.awt.Color(255, 255, 255));
         addStudent.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         addStudent.setAutoscrolls(true);
@@ -236,7 +367,6 @@ public class HostelManagementSystem extends javax.swing.JFrame {
         jScrollPane1.setBackground(new java.awt.Color(255, 255, 255));
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-        jScrollPane1.setHorizontalScrollBar(null);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -359,9 +489,7 @@ public class HostelManagementSystem extends javax.swing.JFrame {
             .addGroup(Student_DetailsLayout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addGroup(Student_DetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(Student_DetailsLayout.createSequentialGroup()
-                        .addComponent(sDisability, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(sDisability, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(Student_DetailsLayout.createSequentialGroup()
                         .addGroup(Student_DetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(Student_DetailsLayout.createSequentialGroup()
@@ -644,7 +772,7 @@ public class HostelManagementSystem extends javax.swing.JFrame {
         room_no.setText("###");
 
         sPhone3.setFont(new java.awt.Font("Arial Black", 1, 20)); // NOI18N
-        sPhone3.setText("ACA. Year");
+        sPhone3.setText("Room No");
 
         jLabel30.setFont(new java.awt.Font("Arial Black", 1, 20)); // NOI18N
         jLabel30.setText(":");
@@ -779,7 +907,7 @@ public class HostelManagementSystem extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(std_dtls)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Student_Details, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(13, 13, 13)
                 .addComponent(part_dtls)
@@ -1320,6 +1448,9 @@ public class HostelManagementSystem extends javax.swing.JFrame {
             }
         });
 
+        jLabel9.setFont(new java.awt.Font("Poor Richard", 1, 16)); // NOI18N
+        jLabel9.setText("NIC or Registration No");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -1328,14 +1459,6 @@ public class HostelManagementSystem extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(54, 54, 54)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(getSearchDetails, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(35, 35, 35)
-                        .addComponent(SearchStudent, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 1799, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(std_detials_view, javax.swing.GroupLayout.PREFERRED_SIZE, 1097, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(101, 101, 101)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -1343,7 +1466,20 @@ public class HostelManagementSystem extends javax.swing.JFrame {
                             .addComponent(edit_std_details, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(del_std, javax.swing.GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE)
                             .addComponent(uploadNew, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(update_std_details, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(update_std_details, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(54, 54, 54)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(getSearchDetails, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)
+                        .addComponent(SearchStudent, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(30, 30, 30)
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 1799, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -1354,8 +1490,11 @@ public class HostelManagementSystem extends javax.swing.JFrame {
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(getSearchDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(SearchStudent))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9)
+                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(std_detials_view, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1385,7 +1524,7 @@ public class HostelManagementSystem extends javax.swing.JFrame {
             viewStudentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, viewStudentLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 843, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -1461,7 +1600,7 @@ public class HostelManagementSystem extends javax.swing.JFrame {
             .addGroup(listStudentLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 1744, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(2008, Short.MAX_VALUE))
+                .addContainerGap(3619, Short.MAX_VALUE))
         );
         listStudentLayout.setVerticalGroup(
             listStudentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1471,9 +1610,17 @@ public class HostelManagementSystem extends javax.swing.JFrame {
         Tabs.addTab("List Students", listStudent);
 
         listRooms.setBackground(new java.awt.Color(255, 255, 255));
+        listRooms.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                listRoomsComponentShown(evt);
+            }
+        });
 
+        jLabel2.setBackground(new java.awt.Color(0, 0, 204));
         jLabel2.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Add Room");
+        jLabel2.setBorder(new javax.swing.border.MatteBorder(null));
 
         jPanel3.setBorder(new javax.swing.border.MatteBorder(null));
 
@@ -1507,7 +1654,7 @@ public class HostelManagementSystem extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(NewroomNo, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1533,41 +1680,91 @@ public class HostelManagementSystem extends javax.swing.JFrame {
                 .addContainerGap(35, Short.MAX_VALUE))
         );
 
+        jPanel5.setBorder(new javax.swing.border.MatteBorder(null));
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
+        jLabel5.setText("Room Count");
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
+        jLabel6.setText("Available Rooms");
+
+        roomsInHostel.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
+        roomsInHostel.setForeground(new java.awt.Color(255, 0, 0));
+        roomsInHostel.setText("###");
+
+        Available_Rooms.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
+        Available_Rooms.setForeground(new java.awt.Color(255, 0, 0));
+        Available_Rooms.setText("###");
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Available_Rooms, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(roomsInHostel, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(117, 117, 117))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(roomsInHostel, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Available_Rooms, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(96, Short.MAX_VALUE))
+        );
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("Room Status");
+        jLabel7.setBorder(new javax.swing.border.MatteBorder(null));
+
         javax.swing.GroupLayout listRoomsLayout = new javax.swing.GroupLayout(listRooms);
         listRooms.setLayout(listRoomsLayout);
         listRoomsLayout.setHorizontalGroup(
             listRoomsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(listRoomsLayout.createSequentialGroup()
-                .addGap(539, 539, 539)
-                .addGroup(listRoomsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(2785, Short.MAX_VALUE))
+                .addGap(315, 315, 315)
+                .addGroup(listRoomsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 434, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(96, 96, 96)
+                .addGroup(listRoomsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(4157, Short.MAX_VALUE))
         );
         listRoomsLayout.setVerticalGroup(
             listRoomsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, listRoomsLayout.createSequentialGroup()
-                .addContainerGap(169, Short.MAX_VALUE)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(135, 135, 135))
+                .addContainerGap(196, Short.MAX_VALUE)
+                .addGroup(listRoomsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addGroup(listRoomsLayout.createSequentialGroup()
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(16, 16, 16)
+                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(listRoomsLayout.createSequentialGroup()
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(102, 102, 102))
         );
 
         Tabs.addTab("Rooms", listRooms);
-
-        javax.swing.GroupLayout leavedFromHostelLayout = new javax.swing.GroupLayout(leavedFromHostel);
-        leavedFromHostel.setLayout(leavedFromHostelLayout);
-        leavedFromHostelLayout.setHorizontalGroup(
-            leavedFromHostelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 3758, Short.MAX_VALUE)
-        );
-        leavedFromHostelLayout.setVerticalGroup(
-            leavedFromHostelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 632, Short.MAX_VALUE)
-        );
-
-        Tabs.addTab("Leave from Hostel", leavedFromHostel);
 
         javax.swing.GroupLayout BodyLayout = new javax.swing.GroupLayout(Body);
         Body.setLayout(BodyLayout);
@@ -1583,8 +1780,14 @@ public class HostelManagementSystem extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BodyLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(Tabs, javax.swing.GroupLayout.PREFERRED_SIZE, 676, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
+
+        SystemName1.setFont(new java.awt.Font("Gloucester MT Extra Condensed", 1, 48)); // NOI18N
+        SystemName1.setForeground(new java.awt.Color(255, 255, 255));
+        SystemName1.setText("Hostel Management System");
+        SystemName1.setIconTextGap(5);
+        SystemName1.setInheritsPopupMenu(false);
 
         javax.swing.GroupLayout HeaderLayout = new javax.swing.GroupLayout(Header);
         Header.setLayout(HeaderLayout);
@@ -1594,15 +1797,16 @@ public class HostelManagementSystem extends javax.swing.JFrame {
                 .addComponent(Body, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(HeaderLayout.createSequentialGroup()
-                .addGap(681, 681, 681)
-                .addComponent(SystemName)
+                .addGap(26, 26, 26)
+                .addComponent(SystemName1, javax.swing.GroupLayout.PREFERRED_SIZE, 417, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         HeaderLayout.setVerticalGroup(
             HeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HeaderLayout.createSequentialGroup()
-                .addComponent(SystemName)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(SystemName1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
                 .addComponent(Body, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
@@ -1614,13 +1818,13 @@ public class HostelManagementSystem extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Header, javax.swing.GroupLayout.PREFERRED_SIZE, 1760, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(306, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(Header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(234, Short.MAX_VALUE))
         );
 
         pack();
@@ -1776,7 +1980,7 @@ public class HostelManagementSystem extends javax.swing.JFrame {
     public boolean isValidNIC(String nic) {
         // Regex for old NIC (9 digits followed by a letter V or X)
         String oldNicRegex = "^[0-9]{9}[VX]$";
-        String newNicRegex = "^[0-9]{9}[VX]$";
+        String newNicRegex = "^\\d{12}$";
         // Regex for new NIC (exactly 12 digits with no letter)
         // Check if NIC matches either old or new format
         return nic.matches(oldNicRegex) || nic.matches(newNicRegex);
@@ -2002,10 +2206,9 @@ public class HostelManagementSystem extends javax.swing.JFrame {
     }//GEN-LAST:event_edit_std_detailsActionPerformed
 
     private void update_std_detailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_update_std_detailsActionPerformed
-        // TODO add your handling code here:
+        System.out.println("Entered to update");
 
-        if (isValidNIC(std_nic_view.getText().trim()) && isValidNIC(parent_nic_view.getText().trim()) && isValidEmail(std_email_view.getText().trim())
-                && isValidSriLankaPhoneNumber(std_phone_view.getText().trim()) && isValidSriLankaPhoneNumber(parent_phone_view.getText().trim())) {
+        
             String stdName = std_name_view.getText();
             String stdAddress = std_address_view.getText();
             String stdPhone = std_phone_view.getText();
@@ -2021,11 +2224,13 @@ public class HostelManagementSystem extends javax.swing.JFrame {
             String stdAcaYear = std_aca_year_view.getSelectedItem().toString();
             String stdDepartment = view_std_department.getSelectedItem().toString();
             String roomNo = std_room_view.getText().trim();
+            System.out.println("Update Started");
 
             if (Actions.updateStudentInDatabase(this.dbIdentificationID, stdName, stdAddress, stdPhone, stdEmail, stdNic,
                     stdBelieves, parentName, parentAddress, parentPhone, parentNic, stdRegNo,
                     stdFaculty, stdAcaYear, stdDepartment, roomNo)) {
                 if (this.isPhotoSelected) {
+                    System.out.println("Update Photo Strated");
                     try {
                         InputStream is = new FileInputStream(new File(path2));
                         DB_Conn db = new DB_Conn();
@@ -2046,8 +2251,7 @@ public class HostelManagementSystem extends javax.swing.JFrame {
                 uploadNew.setVisible(false);
                 disableElements();
 
-            }
-
+           
     }//GEN-LAST:event_update_std_detailsActionPerformed
     }
     private void std_room_viewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_std_room_viewActionPerformed
@@ -2152,18 +2356,54 @@ public class HostelManagementSystem extends javax.swing.JFrame {
     }//GEN-LAST:event_del_stdActionPerformed
 
     private void addRoomsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addRoomsActionPerformed
-        int roomNo = Integer.parseInt(NewroomNo.getText());
-        int maxCount = Integer.parseInt(roomMaxCount.getText());
+            String roomNoText = NewroomNo.getText();
+            String maxCountText = roomMaxCount.getText();
+
+            if (roomNoText.isEmpty() || maxCountText.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "Room number or Max Members cannot be empty", "Field Empty", JOptionPane.ERROR_MESSAGE);
+            } else {
+                try {
+                    // Parse the integers after ensuring the fields are not empty
+                    int roomNo = Integer.parseInt(roomNoText);
+                    int maxCount = Integer.parseInt(maxCountText);
+
+                    Actions.AddRoomToDatabase(roomNo, maxCount);
+                    JOptionPane.showMessageDialog(null, "ROOM HAS BEEN CREATED");
+
+                    // Clear the fields after successful creation
+                    NewroomNo.setText("");
+                    roomMaxCount.setText("");
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Invalid input. Please enter numeric values.", "Invalid Input", JOptionPane.ERROR_MESSAGE);
+                } catch (SQLException ex) {
+                    java.util.logging.Logger.getLogger(HostelManagementSystem.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+
+
+    }//GEN-LAST:event_addRoomsActionPerformed
+
+    private void listRoomsComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_listRoomsComponentShown
+        // TODO add your handling code here:
+        DB_Conn db = new DB_Conn();
+        Connection conn = db.getConnection();
+        String totalRoomsQuery = "SELECT COUNT(*) AS total_rooms FROM rooms";
+        String RoomsAvailable = "SELECT COUNT(*) AS rooms_below_max_count FROM rooms WHERE member_count < max_count";
+        
+        ResultSet roomCount, availableRooms;
         try {
-            Actions.AddRoomToDatabase(roomNo, maxCount);
-            JOptionPane.showMessageDialog(null, "ROOM HAS BEEN CREAETED");
-            NewroomNo.setText("");
-            roomMaxCount.setText("");
+            roomCount = conn.createStatement().executeQuery(totalRoomsQuery);
+             if(roomCount.next()){roomsInHostel.setText(roomCount.getString("total_rooms"));}
+             else{roomCount.getString("NULL");}
+             
+             availableRooms = conn.createStatement().executeQuery(RoomsAvailable);
+             if(availableRooms.next()){Available_Rooms.setText(roomCount.getString("total_rooms"));}
+             else{Available_Rooms.setText("NULL");}
         } catch (SQLException ex) {
             java.util.logging.Logger.getLogger(HostelManagementSystem.class.getName()).log(Level.SEVERE, null, ex);
         }
-
-    }//GEN-LAST:event_addRoomsActionPerformed
+       
+    }//GEN-LAST:event_listRoomsComponentShown
 
     public void makeEmptyAddStudent() {
         std_name.setText("");
@@ -2217,19 +2457,30 @@ public class HostelManagementSystem extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new HostelManagementSystem().setVisible(true);
+            new login().setVisible(true);
+            new HostelManagementSystem().setVisible(false);
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Available_Rooms;
     private javax.swing.JPanel Body;
     private javax.swing.JPanel Gardient_Details;
     private javax.swing.JPanel Gardient_Details1;
     private javax.swing.JPanel Header;
+    private java.awt.Panel Home;
     private javax.swing.JTextField NewroomNo;
     private javax.swing.JButton SearchStudent;
     private javax.swing.JPanel Student_Details;
-    private javax.swing.JLabel SystemName;
+    private javax.swing.JLabel SystemName1;
+    private javax.swing.JLabel SystemName10;
+    private javax.swing.JLabel SystemName11;
+    private javax.swing.JLabel SystemName2;
+    private javax.swing.JLabel SystemName5;
+    private javax.swing.JLabel SystemName6;
+    private javax.swing.JLabel SystemName7;
+    private javax.swing.JLabel SystemName8;
+    private javax.swing.JLabel SystemName9;
     private javax.swing.JTabbedPane Tabs;
     private javax.swing.JButton addRooms;
     private javax.swing.JPanel addStudent;
@@ -2240,7 +2491,6 @@ public class HostelManagementSystem extends javax.swing.JFrame {
     private javax.swing.JTextField getSearchDetails;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
@@ -2267,21 +2517,8 @@ public class HostelManagementSystem extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel42;
-    private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel44;
-    private javax.swing.JLabel jLabel45;
-    private javax.swing.JLabel jLabel46;
-    private javax.swing.JLabel jLabel47;
-    private javax.swing.JLabel jLabel48;
-    private javax.swing.JLabel jLabel49;
-    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel53;
@@ -2290,6 +2527,8 @@ public class HostelManagementSystem extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
@@ -2299,8 +2538,6 @@ public class HostelManagementSystem extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane10;
-    private javax.swing.JScrollPane jScrollPane11;
     private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane13;
     private javax.swing.JScrollPane jScrollPane2;
@@ -2309,10 +2546,8 @@ public class HostelManagementSystem extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
-    private javax.swing.JScrollPane jScrollPane8;
-    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JPanel leavedFromHostel;
+    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JPanel listRooms;
     private javax.swing.JPanel listStudent;
     private javax.swing.JTextArea parent_address;
@@ -2329,39 +2564,28 @@ public class HostelManagementSystem extends javax.swing.JFrame {
     private javax.swing.JButton resetForm;
     private javax.swing.JTextField roomMaxCount;
     private javax.swing.JLabel room_no;
+    private javax.swing.JLabel roomsInHostel;
     private javax.swing.JLabel sAddress;
     private javax.swing.JLabel sAddress1;
     private javax.swing.JLabel sAddress2;
     private javax.swing.JLabel sAddress3;
-    private javax.swing.JLabel sAddress4;
-    private javax.swing.JLabel sAddress5;
     private javax.swing.JLabel sAddress6;
     private javax.swing.JLabel sDisability;
     private javax.swing.JLabel sDisability1;
-    private javax.swing.JLabel sDisability2;
-    private javax.swing.JLabel sDisability3;
     private javax.swing.JLabel sEmail;
-    private javax.swing.JLabel sEmail2;
-    private javax.swing.JLabel sEmail3;
     private javax.swing.JLabel sEmail4;
     private javax.swing.JLabel sEmail6;
     private javax.swing.JLabel sEmail7;
     private javax.swing.JLabel sFollowing;
     private javax.swing.JLabel sFollowing1;
-    private javax.swing.JLabel sFollowing2;
-    private javax.swing.JLabel sFollowing3;
     private javax.swing.JLabel sNIC;
     private javax.swing.JLabel sNIC1;
     private javax.swing.JLabel sNIC2;
     private javax.swing.JLabel sNIC3;
-    private javax.swing.JLabel sNIC4;
-    private javax.swing.JLabel sNIC5;
     private javax.swing.JLabel sName;
     private javax.swing.JLabel sName1;
     private javax.swing.JLabel sName2;
     private javax.swing.JLabel sName3;
-    private javax.swing.JLabel sName4;
-    private javax.swing.JLabel sName5;
     private javax.swing.JLabel sName6;
     private javax.swing.JLabel sName7;
     private javax.swing.JLabel sName8;
@@ -2370,47 +2594,31 @@ public class HostelManagementSystem extends javax.swing.JFrame {
     private javax.swing.JLabel sPhone2;
     private javax.swing.JLabel sPhone3;
     private javax.swing.JLabel sPhone4;
-    private javax.swing.JLabel sPhone5;
-    private javax.swing.JLabel sPhone6;
     private javax.swing.JLabel sPhone7;
     private javax.swing.JButton sPhotoUpload;
     private java.awt.Scrollbar scrollbar1;
     private javax.swing.JComboBox<String> std_aca_year;
     private javax.swing.JComboBox<String> std_aca_year_view;
     private javax.swing.JTextArea std_address;
-    private javax.swing.JTextArea std_address2;
-    private javax.swing.JTextArea std_address3;
     private javax.swing.JTextArea std_address_view;
     private javax.swing.JComboBox<String> std_believes;
-    private javax.swing.JComboBox<String> std_believes2;
-    private javax.swing.JComboBox<String> std_believes3;
     private javax.swing.JComboBox<String> std_believes_view;
     private javax.swing.JComboBox<String> std_department;
     private javax.swing.JLabel std_department_view;
     private javax.swing.JPanel std_details_panel;
     private javax.swing.JScrollPane std_detials_view;
     private javax.swing.JTextArea std_disability;
-    private javax.swing.JTextArea std_disability2;
-    private javax.swing.JTextArea std_disability3;
     private javax.swing.JTextArea std_disability_view;
     private javax.swing.JLabel std_dtls;
     private javax.swing.JTextField std_email;
-    private javax.swing.JTextField std_email2;
-    private javax.swing.JTextField std_email3;
     private javax.swing.JTextField std_email_view;
     private javax.swing.JComboBox<String> std_faculty;
     private javax.swing.JComboBox<String> std_faculty_view;
     private javax.swing.JTextField std_name;
-    private javax.swing.JTextField std_name2;
-    private javax.swing.JTextField std_name3;
     private javax.swing.JTextField std_name_view;
     private javax.swing.JTextField std_nic;
-    private javax.swing.JTextField std_nic2;
-    private javax.swing.JTextField std_nic3;
     private javax.swing.JTextField std_nic_view;
     private javax.swing.JTextField std_phone;
-    private javax.swing.JTextField std_phone2;
-    private javax.swing.JTextField std_phone3;
     private javax.swing.JTextField std_phone_view;
     private javax.swing.JLabel std_photo_view;
     private javax.swing.JLabel std_pic;
